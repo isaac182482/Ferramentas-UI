@@ -154,4 +154,24 @@ uic1.Parent = seu Parent
 ]])
 end)
 
+--botao 7, criar UIStroke
+local b7 = Instance.new("TextButton")
+b7.Size = UDim2.new(0, 50, 0, 40)
+b7.BackgroundColor3 = Color3.new(0, 7, 7)
+b7.Position = UDim2.new(0, 140, 0, 70)
+b7.Text = "Create UIStroke"
+b7.TextScaled = true
+b7.Parent = fd
+
+b7.MouseButton1Click:Connect(function()
+b7.BackgroundColor3 = Color3.new(0, 0, 1)
+wait(0.1)
+b7.BackgroundColor3 = Color3.new(0, 7, 7)
+setclipboard([[
+local uik1 = Instance.new("UIStroke")
+uik1.Thickness = 3
+uik1.Parent = Seu Parent
+]])
+end)
+
  
